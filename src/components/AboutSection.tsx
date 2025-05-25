@@ -7,8 +7,8 @@ const AboutSection: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2 animate-fadeInLeft">
-            <div className="relative transform translate-x-10 md:transform md:translate-x-15">
-              <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl mx-auto md:mx-0 transform translate-x-10 md:transform md:translate-x-40">
+            <div className="relative transform translate-x-8 md:transform md:translate-x-15">
+              <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl mx-auto md:mx-0 transform translate-x-6 md:transform md:translate-x-40">
                 <img 
                   src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                   alt="Profile" 

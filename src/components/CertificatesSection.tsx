@@ -47,6 +47,10 @@ const achievements = [
     link: "/achievements/hackwithinfinity_4th_place.pdf" // Replace with actual PDF filename
   },
   {
+    description: "Organized TechMaze college-level technical event",
+    link: "/achievements/techmaze_event.pdf" // Replace with actual PDF filename, if available
+  },
+  {
     description: "Achieved 3rd prize in Inter-College level Codebreakers Competition",
     link: "/achievements/codebreakers_3rd_prize.pdf" // Replace with actual PDF filename
   },
@@ -57,11 +61,8 @@ const achievements = [
   {
     description: "BTech CGPA of 9.31 (up to 3-1 semester)"
     // No link, as academic scores typically don’t have PDFs
-  },
-  {
-    description: "Organized TechMaze college-level technical event",
-    link: "/achievements/techmaze_event.pdf" // Replace with actual PDF filename, if available
   }
+  
 ];
 
 const CertificatesSection: React.FC = () => {

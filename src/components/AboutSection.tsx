@@ -5,22 +5,23 @@ const AboutSection: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="md:w-1/2 animate-fadeInLeft">
-            <div className="relative transform translate-x-8 md:transform md:translate-x-15">
-              <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl mx-auto md:mx-0 transform translate-x-6 md:transform md:translate-x-40">
-                <img 
-                  src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                  alt="Profile" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-4 right-0 md:right-4 bg-white dark:bg-gray-800 p-4 rounded-full shadow-lg">
-                <span className="block text-xs font-semibold text-gray-600 dark:text-gray-400">BTech CSE</span>
-                <span className="block text-xl font-bold text-blue-600 dark:text-blue-400">Data Science</span>
-              </div>
-            </div>
-          </div>
+  <div className="flex flex-col md:flex-row items-center gap-12">
+    <div className="md:w-1/2 animate-fadeInLeft">
+      <div className="relative">
+        <div className="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl mx-auto md:mx-0">
+          <img 
+            src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+            alt="Profile" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 md:left-auto md:right-4 bg-white dark:bg-gray-800 p-4 rounded-full shadow-lg text-center">
+          <span className="block text-xs font-semibold text-gray-600 dark:text-gray-400">BTech CSE</span>
+          <span className="block text-xl font-bold text-blue-600 dark:text-blue-400">Data Science</span>
+        </div>
+      </div>
+    </div>
+
           
           <div className="md:w-1/2 animate-fadeInRight">
             <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-6 relative">

@@ -4,21 +4,24 @@ import { FileText, Github, Linkedin, Video } from 'lucide-react';
 const AboutSection: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-4 md:px-6">
+      
+  <div className="container mx-auto px-4 md:px-6">
   <div className="flex flex-col md:flex-row items-center gap-12">
-    <div className="md:w-1/2 animate-fadeInLeft">
-      <div className="relative">
-        <div className="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl mx-auto md:mx-0">
-          <img 
-            src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-            alt="Profile" 
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 md:left-auto md:right-4 bg-white dark:bg-gray-800 p-4 rounded-full shadow-lg text-center">
-          <span className="block text-xs font-semibold text-gray-600 dark:text-gray-400">BTech CSE</span>
-          <span className="block text-xl font-bold text-blue-600 dark:text-blue-400">Data Science</span>
-        </div>
+    {/* Image Section */}
+    <div className="relative md:w-1/2 flex justify-center">
+      {/* Circular Image */}
+      <div className="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
+        <img 
+          src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+          alt="Profile" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Badge */}
+      <div className="absolute bottom-4 md:bottom-6 bg-white dark:bg-gray-900 px-4 py-1.5 rounded-full shadow-md flex flex-col items-center">
+        <span className="text-xs font-semibold text-gray-600 dark:text-gray-400">BTech CSE</span>
+        <span className="text-sm font-bold text-blue-600 dark:text-blue-400">Data Science</span>
       </div>
     </div>
 

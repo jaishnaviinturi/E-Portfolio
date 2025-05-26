@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, Github, Linkedin, Video } from 'lucide-react';
+import { Github, Linkedin, Mail, Code,Video,FileText } from 'lucide-react';
 
 const AboutSection: React.FC = () => {
   return (
@@ -68,6 +68,18 @@ const AboutSection: React.FC = () => {
               <a href="https://linkedin.com/in/jaishnavi-inturi-839251259" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 <Linkedin size={24} />
               </a>
+              <a
+              href="mailto:jaishnaviinturi@gmail.com"
+              target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
+              <Mail size={24} />
+            </a>
+            <a
+              href="https://leetcode.com/u/jaishnavi-30/"
+              target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
+              <Code size={24} />
+            </a>
             </div>
           </div>
         </div>

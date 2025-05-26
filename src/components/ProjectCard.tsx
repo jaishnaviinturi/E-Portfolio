@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github } from 'lucide-react';
+import { Github, ExternalLink } from 'lucide-react';
 
 interface Project {
   id: number;
@@ -18,12 +18,8 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <a
-      href={project.liveUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 block"
-      aria-label={`View ${project.title} live project`}
+    <div
+      className="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
     >
       <div className="relative overflow-hidden h-48">
         <img 
@@ -32,16 +28,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="absolute bottom-4 left-4 right-4 flex justify-end">
+          <div className="absolute bottom-4 left-4 right-4 flex justify-end space-x-3">
+            <a 
+              href={project.liveUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-2 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors flex items-center space-x-1"
+              aria-label={`View ${project.title} live project`}
+            >
+              <ExternalLink size={18} />
+              <span className="text-sm">Live</span>
+            </a>
             <a 
               href={project.githubUrl} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors"
-              onClick={(e) => e.stopPropagation()} // Prevent card click from triggering
+              className="p-2 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors flex items-center space-x-1"
               aria-label={`View ${project.title} code on GitHub`}
             >
               <Github size={18} />
+              <span className="text-sm">Code</span>
             </a>
           </div>
         </div>
@@ -67,7 +73,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           )}
         </div>
       </div>
-    </a>
+    </div>
   );
 };
 

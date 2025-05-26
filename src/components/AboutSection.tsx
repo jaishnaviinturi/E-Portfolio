@@ -52,7 +52,7 @@ const AboutSection: React.FC = () => {
                 <span>Download Resume</span>
               </a>
               <a 
-                href="/video-resume.mp4"
+                href="/Visume.mp4"
                 target="_blank"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-600 text-white hover:bg-purple-700 dark:hover:bg-purple-500 transition-colors"
               >
